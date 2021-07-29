@@ -20,7 +20,7 @@ This role contains tasks to:
 - Clone the Project:
 
 ```
-cd ansible-projects/demo/tomcat
+mkdir ansible-projects/demo/tomcat
 git clone --filter=blob:none --sparse https://hv-support/customer-training.git
 cd customer-training
 git sparse-checkout add dst/ansible-tomcat
