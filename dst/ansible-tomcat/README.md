@@ -21,7 +21,7 @@ This role contains tasks to:
 
 ```
 cd ansible-projects/demo/roles
-git clone https://github.com/jporeilly/ansible-tomcat.git
+git clone https://github.com/hv-support/customer-training/dst/ansible-tomcat.git
 ```
 
 - Update your inventory, e.g:
