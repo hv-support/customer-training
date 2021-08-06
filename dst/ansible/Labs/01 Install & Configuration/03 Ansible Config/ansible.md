@@ -21,11 +21,7 @@ cd
 mkdir ansible_projects
 cd ansible_projects
 mkdir demo
-/demo
-```
-change to ansible_projects/demo directory:
-```
-cd ansible_projects/demo
+cd demo
 ```
 now copy over ansible directory:
 ```
@@ -72,16 +68,15 @@ edit the hosts file:
 [all]
 10.0.0.2
 10.0.0.3
-10.0.0.4
 
-[group1]
+
+[Group1]
 10.0.0.2
 
-[group2]
+[Group2]
 10.0.0.3
-10.0.0.4O
 
-[group:children]
+[Group:children]
 group1
 group2
 ```
@@ -106,11 +101,11 @@ ansible all -m ping
 ```
 ping your Group node(s):
 ```
-ansible group2 -m ping
+ansible Group2 -m ping
 ```
 could also reference groups:
 ```
-ansible group1:group2 -m ping
+ansible Group1:Group2 -m ping
 ```
 you can also use --list-hosts to check:
 ```
