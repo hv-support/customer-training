@@ -1,7 +1,18 @@
 # <font color='red'>Hitachi Vantara Customer Training </font>
 
 #### How to checkout a folder
+All our Course-Materials are in a single customer-training git repository.
 
+```
+mkdir Course-Materials
+cd Course-Materials
+git clone --filter=blob:none --sparse https://github.com/hv-support/customer-training.git
+cd customer-training
+git sparse-checkout add  dst/ansible
+cd dst
+mv ansible ~/Course-Materials
+```
+* delete the empty customer-training folder.
 
 
 ##### Legal Stuff..    
