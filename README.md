@@ -4,8 +4,8 @@ The public Hitatchi Vantara Customer Success repository.
 customer-training  
 |_ ASG  
 |_ DST  
-    |_ <em>Ansible</em>  
-    |_ <em>Ansible-Tomcat</em>    
+>    |_ <em>Ansible</em>  
+>    |_ <em>Ansible-Tomcat</em>    
 
 
 #### How to checkout a folder
