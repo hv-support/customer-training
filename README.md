@@ -1,4 +1,12 @@
-# <font color='red'>Hitachi Vantara Customer Training </font>
+## <font color='red'>Hitachi Vantara Customer Training </font>
+The public Hitatchi Vantara Customer Success repository.
+
+customer-training
+|_ ASG
+|_ DST
+   |_ Ansible
+   |_ Ansible-Tomcat
+
 
 #### How to checkout a folder
 All our Course-Materials are in a single customer-training git repository.
