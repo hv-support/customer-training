@@ -4,8 +4,7 @@ The public Hitatchi Vantara Customer Success repository.
 customer-training  
 |_ ASG  
 |_ DST  
- &nbsp  &nbsp   |_ <em>Ansible</em>  
- &nbsp  &nbsp   |_ <em>Ansible-Tomcat</em>    
+    
 
 
 
