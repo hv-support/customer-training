@@ -25,7 +25,8 @@ A playbook runs in order from top to bottom. Within each play, tasks also run in
 
 create a playbook on the Ansible Controller:
 ```
-cd ansible_projects/demo/playbooks
+mkdir ansible_projects/demo/playbooks
+cd playbooks
 nano playbook.yaml
 ```
 copy the following:
@@ -68,7 +69,7 @@ to run the playbook:
 ```
 ansible-playbook playbook.yaml
 ```
-can also run multiple tasks against different hosts:
+can also run multiple tasks against different hosts (ensure you're running Python 2 on the Nodes otherwise switch to Python 3 and run dnf version):
 ```
 nano wget.yaml
 ```
@@ -109,7 +110,7 @@ copy the following:
    name: uninstall httpd
 
    tasks:
-   -name: uninstall httpd
+   - name: uninstall httpd
     yum: name=httpd state=absent 
  
  - hosts: 10.0.0.3
@@ -117,8 +118,8 @@ copy the following:
    name: uninstall wget
 
    tasks:
-   -name: uninstall wget
-    yum: name=wget state=absent
+   - name: uninstall wget
+     yum: name=wget state=absent
 ```
 save..
 
@@ -144,7 +145,7 @@ copy the following:
 
    tasks:
    name: install httpd
-   yum: name=httpd state=latest
+     yum: name=httpd state=latest
 ```
 save..
 
