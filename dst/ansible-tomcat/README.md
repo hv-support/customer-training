@@ -29,7 +29,7 @@ git sparse-checkout add dst/ansible-tomcat
 - Update your inventory, e.g:
 ```
 nano hosts
-[tomcat-nodes]
+[Group1]
 10.0.0.2       # Node IP
 ```
 
@@ -37,7 +37,7 @@ nano hosts
 ```
 nano tomcat-setup.yml
 - name: Tomcat deployment playbook
-  hosts: tomcat-nodes       # Inventory hosts group / server to act on
+  hosts: Group1       # Inventory hosts group / server to act on
   become: yes               # If to escalate privilege
   become_method: sudo       # Set become method
   remote_user: root     # Update username for remote server
