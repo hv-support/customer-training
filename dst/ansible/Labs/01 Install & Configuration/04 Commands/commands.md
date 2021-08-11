@@ -101,7 +101,7 @@ cd ansible_projects/demo
 mkdir source_files
 cd source_files
 touch transfer_file.txt
-nano tranfer.txt
+nano transfer_file.txt
 # just add some stuff to the file - hello world ..!
 cat transfer_file.txt
 ```
@@ -115,12 +115,12 @@ ansible 10.0.0.2 -m copy -a "src=~/ansible_projects/demo/source_files/transfer_f
 Note: look at the response on the Ansible Controller for Node1:
 check the dest_files directory on Node1:
 ```
-cd dest_files
+cd ansible_assets/dest_files
 cat transfer_file.txt
 ```
 
 **fetch**    
-on the ansible controller:
+on the ansible controller:  
 ensure you're in the ansible_projects/demo directory:
 ```
 ansible 10.0.0.2 -m fetch -a "src=~/ansible_assets/dest_files/transfer_file.txt dest=./dest_files/"
@@ -131,13 +131,13 @@ tree demo
 ```
 to flatten the directory run the command on the ansible controller:
 ```
-ansible 10.0.0.2 -m fetch -a "src=~/dest_files/transfer_file.txt dest=./dest_files flat=yes"
+ansible 10.0.0.2 -m fetch -a "src=~/ansible_assets/dest_files/transfer_file.txt dest=./dest_files/ flat=yes"
 ```
 but..!!   what happens if I have the same filename on serveral servers (could also )..  then it will fail..  so you could use a variable based on inventory hostname.
 
 on the ansible controller:
 ```
-ansible 10.0.0.2 -m fetch -a "src=~/ansible_assets/dest_files/transfer_file.txt dest=./dest_files/{{inventory_hostname}}_transfer_file.txt flat=yes"
+ansible 10.0.0.2 -m fetch -a "src=~/ansible_assets/dest_files/transfer_file.txt dest=./dest_files/{{inventory_hostname}}/ flat=yes"
 ```
 on the ansible controller:
 ```
@@ -189,7 +189,9 @@ Note: look at the response..  check that hello.txt has been deleted from 10.0.0.
 
 ---
 
-#### <font color='red'>Managing Packages</font>
+#### <font color='red'>Managing Packages
+PLEASE DO NOT ATTEMPT - you dont want to uninstall these packages.  This is just for illustrative purposes....</font>
+
 The Ad-hoc commands are available for yum and apt.
 
 Syntax: ansible [-i inventory file] <servers> -m [package_manager] -a "name=[package] state=present"
