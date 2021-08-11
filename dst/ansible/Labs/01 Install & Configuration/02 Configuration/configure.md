@@ -164,9 +164,11 @@ select a color scheme and select Course-Materials/ansible folder...
 
 </br>
 
-**generate ssh keys** 
+**generate ssh keys**
+ensure your in home directory. 
 next create keys:
 ```
+cd
 ssh-keygen
 ```
 just hit enter...  
