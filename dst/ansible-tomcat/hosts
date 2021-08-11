@@ -1,2 +1,2 @@
-[tomcat-nodes]
+[Group1]
 10.0.0.2 # Add Server IP address, one line per server
