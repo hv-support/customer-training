@@ -21,7 +21,7 @@ This role contains tasks to:
 
 ```
 mkdir ansible-projects/demo/tomcat
-git clone --filter=blob:none --sparse https://hv-support/customer-training.git
+git clone --filter=blob:none --sparse https://github.com/hv-support/customer-training.git
 cd customer-training
 git sparse-checkout add dst/ansible-tomcat
 ```
