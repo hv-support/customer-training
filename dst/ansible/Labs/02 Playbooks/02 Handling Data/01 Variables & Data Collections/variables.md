@@ -87,7 +87,7 @@ nano data_collection.yaml
 add the following:
 ```
 ---
- - hosts: localhost
+ - hosts: 10.0.0.2
    vars:
     x: 34
     #pakgs: ['vim','nano','httpd','nginx']
@@ -233,7 +233,7 @@ nano hostvars.yaml
 add the following:
 ```
 ---
-- hosts: 10.0.0.1
+- hosts: 10.0.0.2
   gather_facts: false
   tasks:
     - debug:
