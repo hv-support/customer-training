@@ -9,7 +9,9 @@ customer-training
 
 
 #### How to checkout a folder
-All our Course-Materials are in a single customer-training git repository.
+The Course-Materials are located under a folder, in asingle customer-training git repository; for example ansible, customer-training/dst/ansible.  You first need to download the index and then execute a sparse-checkout.  
+
+For example - ansible
 
 ```
 mkdir Course-Materials
