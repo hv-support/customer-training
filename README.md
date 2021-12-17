@@ -2,7 +2,7 @@
 The public Hitatchi Vantara Customer Success repository.
 
 customer-training  
-  |- DST  
+  |-ansible-tomcat 
     
 
 
