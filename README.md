@@ -1,9 +1,9 @@
 ## <font color='red'>Hitachi Vantara Customer Training </font>
 The public Hitatchi Vantara Customer Success repository.
 
-customer-training
-  |-ansible 
-  |-ansible-tomcat 
+customer-training  
+  |-ansible   
+  |-ansible-tomcat   
     
 
   |-ldos-installation
