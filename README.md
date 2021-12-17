@@ -3,10 +3,11 @@ The public Hitatchi Vantara Customer Success repository.
 
 customer-training  
 >  |-ansible   
->  |-ansible-tomcat   
+>  |-ansible-tomcat
+>  >  |-roles      
     
 
-  |-ldos-installation
+>  |-ldos-installation
 
 #### How to checkout a folder
 The Course-Materials are located under a folder, in asingle customer-training git repository; for example ansible, customer-training/dst/ansible.  You first need to download the index and then execute a sparse-checkout.  
