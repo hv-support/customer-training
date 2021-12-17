@@ -2,8 +2,8 @@
 The public Hitatchi Vantara Customer Success repository.
 
 customer-training  
-  |-ansible   
-  |-ansible-tomcat   
+>>  |-ansible   
+>>  |-ansible-tomcat   
     
 
   |-ldos-installation
