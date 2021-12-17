@@ -2,7 +2,6 @@
 The public Hitatchi Vantara Customer Success repository.
 
 customer-training  
-  |- ASG  
   |- DST  
     
 
