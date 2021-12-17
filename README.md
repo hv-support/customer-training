@@ -17,7 +17,7 @@ mkdir Course-Materials
 cd Course-Materials
 git clone --filter=blob:none --sparse https://github.com/hv-support/customer-training
 cd customer-training
-git sparse-checkout add  dst/ansible
+git sparse-checkout add ansible
 cd dst
 mv ansible ~/Course-Materials
 ```
